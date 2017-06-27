@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 jekyll-gulp-sass-browser-sync
 =============================
 
@@ -50,3 +51,6 @@ gulp.task("deploy", ["jekyll-build"], function () {
         .pipe(deploy());
 });
 ```
+=======
+# my-site
+>>>>>>> 1118a2e1c6a9b2e6d7c236dc1a9e412d1d76c15b
