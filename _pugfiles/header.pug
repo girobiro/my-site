@@ -1,10 +1,19 @@
+mixin nav-content()
+  ul
+    li: a(href="about") About
+    li: a(href="portfolio") Portfolio
+    li: a(href="contact") Contact
+
+.mobile-nav.is-open
+  +nav-content()
 header
-  h1.logo John Glyndwr
+  .header-position
+    h1.logo John Glyndwr
+    
+    nav.site-nav
+      +nav-content()
+    
+    a(href="mailto:johnglyndwr@gmail.com").email-link +email me
+    
+    .mobile-nav-toggle: span
   
-  nav.site-nav
-    ul
-      li: a(href="about") About
-      li: a(href="portfolio") Portfolio
-      li: a(href="contact") Contact
-  
-  a(href="mailto:johnglyndwr@gmail.com").email-link +email me
